@@ -3,10 +3,12 @@ import cn from 'classnames'
 import Svg from './Svg'
 import { arrowDownIcon, arrowUpIcon } from '../assets/icons'
 
-export default function Accordion({ title, children }: { title: string, children: React.ReactNode }) {
+export default function Accordion({ title, children, className = '' }:
+    { title: string, children: React.ReactNode } & React.ComponentProps<'div'>
+) {
     const [isOpen, setIsOpen] = React.useState(false)
     return (
-        <div className='bg-white p-2 px-4'>
+        <div className={`bg-white p-2 px-4 ${className}`}>
             <div className="flex justify-between items-center cursor-pointer" onClick={() => setIsOpen(prev => !prev)}>
                 <span className={cn('font-semibold text-base', {
                     'text-accent': isOpen

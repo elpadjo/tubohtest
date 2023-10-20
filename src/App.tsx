@@ -8,7 +8,6 @@ import Partners from './components/partners/Partners'
 import TopBookedTests from './components/top_booked_tests/TopBookedTests'
 
 function App() {
-
   return (
     <main className="text-primary text-sm">
       <Header />

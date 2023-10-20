@@ -10,8 +10,8 @@ export default function Partners() {
                 <h2 className='text-3xl font-bold text-accent mb-3'>Our Partner Labs</h2>
                 <p className='mb-8'>Your test will be conducted in one of our partner labs to ensure highest accuracy of your reports.</p>
                 <div className='grid grid-cols-4 gap-8'>
-                    {partnerTags.map((item) => (
-                        <PartnerTag key={item.title} icon={item.icon} name={item.name} />
+                    {partnerTags.map((item, index) => (
+                        <PartnerTag key={index} icon={item.icon} name={item.name} />
                     ))}
                 </div>
             </div>
