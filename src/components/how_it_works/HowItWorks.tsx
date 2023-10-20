@@ -9,7 +9,7 @@ export default function HowItWorks() {
     return (
         <section className='py-12'>
             <h2 className='text-center text-3xl font-bold text-accent my-12'>How It Works</h2>
-            <div className='container mx-auto flex justify-between gap-6'>
+            <div className='w-90% sm:container px-6 mx-auto flex flex-col md:flex-row justify-between gap-6'>
                 {HIWData.map((item) => (
                     <HIWCard key={item.title} icon={item.icon} title={item.title} description={item.description} />
                 ))}

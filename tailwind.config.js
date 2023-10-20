@@ -13,6 +13,12 @@ export default {
         bg_1: '#E8E6F3',
         bg_2: '#F8F9FC',
       },
+      width: {
+        '90%': '90%'
+      },
+      container:{
+        width: '90%'
+      }
     },
   },
   plugins: [],

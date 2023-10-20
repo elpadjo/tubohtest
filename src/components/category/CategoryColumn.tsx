@@ -7,7 +7,7 @@ export default function CategoryColumn({ data }: { data: Record<string, Category
     const dataToMap = Object.entries(data)
     const halfLength = Math.ceil(dataToMap.length / 2)
     return (data
-        ? <div className="grid grid-cols-2 gap-4 items-start my-6">
+        ? <div className="grid grid-col-1 md:grid-cols-2 gap-4 items-start my-6">
             <div className='grid gap-4'>
                 {dataToMap.slice(0, halfLength).map(([category, tests]) => (
                     <Accordion key={category} title={toInitialCaps(category)}>

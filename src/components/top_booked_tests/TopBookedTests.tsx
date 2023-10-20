@@ -9,9 +9,9 @@ const TBTData = Array(8).fill({
 export default function TopBookedTests() {
     return (
         <section className='py-12'>
-            <div className='container mx-auto'>
+            <div className='w-90% sm:container px-6 mx-auto'>
                 <h2 className='text-3xl font-bold text-accent my-12'>Top Booked Tests</h2>
-                <div className="grid grid-cols-4 gap-x-8 gap-y-10">
+                <div className="flex flex-col sm:grid sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-10">
                     {TBTData.map((item, index) => (
                         <TopBookedTestsCard
                             key={index}
